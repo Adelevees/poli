@@ -1,0 +1,28 @@
+<div class="conteiner">
+  <div class="form" *ngIf="conectare; else spam">
+    <h1>Conectare</h1>
+    <label for="utilizator">Nume utilizator</label>
+
+    <input type="text" [(ngModel)]="utilizator" />
+    <br />
+    <label for="pasword">Parola</label>
+    <input type="password " [(ngModel)]="parola" />
+    <button (click)="conect()">Conectare</button>
+    <p *ngIf="eroare !== ''">{{ eroare }}</p>
+    <p>nu ai cont?<a (click)="activeazaFormular()">inregistrare</a></p>
+  </div>
+  <!-- -------------------------------------ll------------------------------------------ -->
+  <ng-template #spam
+    ><div class="aut">
+      <h2>Inregistrare</h2>
+      <label for="utilizator">Nume utilizator</label>
+      <input type="text" [(ngModel)]="utilizator" />
+      <label for="password">parola</label>
+      <input type="password" [(ngModel)]="parola" />
+      <label for="verificare">Verificare parola</label>
+      <input type="password" [(ngModel)]="parolaRepetata" />
+      <button class="bbt">inregistrare</button>
+      <P>Ai deja un cont?<a (click)="activeazaFormular()">Conecteaza-te</a></P>
+    </div></ng-template
+  >
+</div>

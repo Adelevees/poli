@@ -1,0 +1,11 @@
+button {
+  background-color: teal;
+  margin-left: 50px;
+}
+
+.conteiner {
+  background-color: black;
+  padding-top: 50px;
+  width: 300px;
+  padding-bottom: 50px;
+}

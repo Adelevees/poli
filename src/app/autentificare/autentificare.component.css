@@ -1,0 +1,60 @@
+.conteiner {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(124, 75, 11);
+  background-color: black;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(177, 149, 101);
+  border-radius: 30px;
+  padding: 50px;
+}
+h1 {
+  font-size: xx-large;
+  text-align: center;
+  padding: 30px;
+}
+p {
+  padding: 20px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgb(152, 76, 9);
+  color: black;
+}
+input {
+  width: 300px;
+  height: 32px;
+  border-radius: 20px;
+}
+label {
+  font-size: medium;
+  text-align: center;
+}
+.aut {
+  flex-direction: column;
+  display: flex;
+  padding: 50px;
+  margin: 30px;
+  background-color: rgb(226, 114, 94);
+  border-radius: 50px;
+}
+.bbt {
+  text-align: center;
+  padding: 20px;
+
+  background-color: rgb(200, 49, 49);
+}
+h2 {
+  font-size: xx-large;
+  text-align: center;
+  padding: 30px;
+}

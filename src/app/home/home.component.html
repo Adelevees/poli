@@ -1,0 +1,35 @@
+<p>home works!</p>
+<section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="-my-8 divide-y-2 divide-gray-800">
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:flex-grow">
+          <div *ngFor="let personaj of personaje">
+            <p>{{ personaj.nume }}</p>
+            <p>{{ personaj.varsta }}</p>
+            ><button
+              class="inline-flex items-center bg-gray-800 border-0 py-1 px-3"
+            >
+              Sterge
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="conteiner">
+    <h1></h1>
+
+    <label for="utilizator">Nume </label>
+
+    <input type="text" [(ngModel)]="nume" class="text-black" />
+    <BR />
+    <BR />
+    <label for="utilizator">varsta </label>
+
+    <input type="text" [(ngModel)]="varsta" class="text-black" />
+    <BR />
+    <BR />
+    <button (click)="adaugarePersonaj()">Adauga personaje</button>
+  </div>
+</section>
